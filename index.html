@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestor de Tareas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body class="light">
+  <div id="app">
+    <aside class="sidebar card">
+      <h2>Usuarios</h2>
+      <ul id="userList"></ul>
+      <input type="text" id="newUserInput" placeholder="Nuevo usuario..." />
+      <button>Añadir Usuario</button>
+    
+      <div id="userInfo" class="hidden">
+        <hr />
+        <p id="userName"></p>
+        <p id="userStats"></p>
+        <button>Deseleccionar</button>
+      </div>
+    
+      <button style="margin-top:auto">🌙/☀️ Tema</button>
+    </aside>
+    <main class="main">
+      <div class="card">
+        <h1 id="mainTitle">Selecciona un usuario</h1>
+        <div id="taskSection" class="hidden">
+          <ul id="taskList"></ul>
+          <input type="text" id="newTaskInput" placeholder="Nueva tarea..." />
+          <button>Añadir Tarea</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="text/babel" src="app.js"></script>
+</body>
+</html>

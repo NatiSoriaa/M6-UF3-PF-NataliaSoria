@@ -15,11 +15,8 @@ El contexto ThemeContext se utiliza para gestionar el tema de la aplicación (cl
 (app.js)
 1. Creación del Contexto: const ThemeContext = createContext()
 2. Provisión del Contexto: En el componente App, el contexto se proporciona a través de un ThemeContext.Provider. Esto permite que los componentes hijos accedan al tema actual (theme) y a la función para cambiarlo (toggleTheme). 
-  <ThemeContext.Provider value={{ theme, toggleTheme }}>
-    <div className={`app ${theme}`}>
-      ...
-    </div>
-  </ThemeContext.Provider>
+  <img width="235" alt="image" src="https://github.com/user-attachments/assets/e8f4d065-70ad-4ff1-b243-7c6408b3b6c6" />
+
 3. Consumo del Contexto: En el componente Sidebar, se utiliza el useContext para acceder al contexto del tema. Esto permite que el botón de cambio de tema funcione correctamente.
   const { toggleTheme } = useContext(ThemeContext);
   <button onClick={toggleTheme} style={{ marginTop: "auto" }}>

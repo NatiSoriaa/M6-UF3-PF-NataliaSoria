@@ -22,6 +22,7 @@ El contexto ThemeContext se utiliza para gestionar el tema de la aplicación (cl
 3. Consumo del Contexto: En el componente Sidebar, se utiliza el useContext para acceder al contexto del tema. Esto permite que el botón de cambio de tema funcione correctamente.
   <img width="260" alt="image" src="https://github.com/user-attachments/assets/6bfed003-8bb3-4d53-b2c7-170920ec5ff4" />
 
+
 Estados Principales
 
 La aplicación utiliza varios estados para gestionar los datos dinámicos:
@@ -34,5 +35,5 @@ Flujo de Datos
 1. Agregar Usuarios: El formulario en Sidebar permite agregar un nuevo usuario. La función addUser actualiza el estado users con el nuevo usuario.
 2. Seleccionar Usuario: Al hacer clic en un usuario de la lista, se actualiza el estado selectedUserIndex. Esto permite que los componentes UserInfo y TaskSection muestren la información del usuario seleccionado.
 3. Gestionar Tareas: En TaskSection, se pueden agregar, completar, editar o eliminar tareas. Estas acciones actualizan la lista de tareas del usuario seleccionado dentro del estado users.
-4. Cambio de Tema: El botón de cambio de tema en Sidebar actualiza el estado theme. Esto sincroniza la clase del <body> con el tema actual (light o dark), aplicando los estilos correspondientes.
+4. Cambio de Tema: El botón de cambio de tema en Sidebar actualiza el estado theme. Esto sincroniza la clase del body con el tema actual (light o dark), aplicando los estilos correspondientes.
 
